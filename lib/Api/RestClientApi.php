@@ -395,6 +395,8 @@ class RestClientApi
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
         }
 
+        $defaultHeaders['Authorization'] = 'Bearer '.$access_token;
+
         $headers = array_merge(
             $defaultHeaders,
             $headerParams,
@@ -699,6 +701,8 @@ class RestClientApi
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
         }
+
+        $defaultHeaders['Authorization'] = 'Bearer '.$access_token;
 
         $headers = array_merge(
             $defaultHeaders,
@@ -1019,6 +1023,8 @@ class RestClientApi
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
         }
 
+        $defaultHeaders['Authorization'] = 'Bearer '.$access_token;
+
         $headers = array_merge(
             $defaultHeaders,
             $headerParams,
@@ -1337,6 +1343,8 @@ class RestClientApi
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
         }
+
+        $defaultHeaders['Authorization'] = 'Bearer '.$access_token;
 
         $headers = array_merge(
             $defaultHeaders,
